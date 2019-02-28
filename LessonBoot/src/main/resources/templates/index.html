@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Top page</title>
+	<link href="/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h2>Top page</h2>
+	<p><a th:href="@{'/login/'}">ログイン</a></p>
+	<p><a th:href="@{'/registration/'}">ユーザー登録</a></p>
+</body>
+</html>

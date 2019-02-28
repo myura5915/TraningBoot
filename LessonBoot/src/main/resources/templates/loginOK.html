@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>LoginOK</title>
+	<link href="/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+</head>
+<body>
+	<header>
+	</header><br><br>
+	<main>
+		<div class="frame">
+		<h2 th:text="${msg}"></h2>
+		<p>Loginに成功しました!</p>
+		</div><br>
+		<p>Logoutは<a th:href="@{'/logout/'}">こちら</a></p>
+	</main>
+</body>
+</html>
