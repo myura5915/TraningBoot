@@ -10,7 +10,7 @@
 	</header><br><br>
 	<main>
 		<div class="frame">ユーザー登録</div><br>
-		<form method="post" action="/Lesson/RegistrationServlet">
+		<form method="post" th:action="@{'/registration/action/'}" th:object="${registrationBean}">
 			<table>
 				<tr>
 					<td>ユーザー名</td><td><input type="text" name="user_name" style="width:150px;"></td>

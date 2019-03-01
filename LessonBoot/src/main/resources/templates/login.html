@@ -10,16 +10,14 @@
 	</header><br><br>
 	<main>
 		<div class="frame">Login</div><br>
- 		<form method="post" th:action="@{'/loginSu'}" th:object="${loginBean}">
+ 		<form method="post" th:action="@{'/login/action/'}" th:object="${loginBean}">
  			<table>
 				<tr>
 					<td>ユーザー名</td><td><input type="text" th:value="${name}"/></td>
-<!-- 					<td>ユーザー名</td><td><input type="text" name="user_name" th:field="*{name}" style="width:150px;"></td>
- -->				</tr>
+				</tr>
 				<tr>
 					<td>パスワード</td><td><input type="password" th:value="${password}"/></td>
-<!-- 					<td>パスワード</td><td><input type="password" name="password" th:field="*{password}" style="width:150px;"></td>
- -->				</tr>
+				</tr>
 			</table><br>
 			<input type="submit" value="ログイン">
 		</form><br>

@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/lesson
+    username: root
+    password: collabo2017
+    driver-class-name: com.mysql.jdbc.Driver
